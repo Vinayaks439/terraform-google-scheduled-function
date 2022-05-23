@@ -87,4 +87,5 @@ module "main" {
   max_instances                      = var.function_max_instances
   vpc_connector                      = var.vpc_connector
   vpc_connector_egress_settings      = var.vpc_connector_egress_settings
+  ingress_settings                   = var.function_ingress_settings
 }
