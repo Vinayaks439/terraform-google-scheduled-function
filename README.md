@@ -67,7 +67,7 @@ Then perform the following commands on the root folder:
 | topic\_name | Name of pubsub topic connecting the scheduled job and the function | `string` | `"test-topic"` | no |
 | vpc\_connector | The VPC Network Connector that this cloud function can connect to. It should be set up as fully-qualified URI. The format of this field is projects//locations//connectors/\*. | `string` | `null` | no |
 | vpc\_connector\_egress\_settings | The egress settings for the connector, controlling what traffic is diverted through it. Allowed values are ALL\_TRAFFIC and PRIVATE\_RANGES\_ONLY. If unset, this field preserves the previously set value. | `string` | `null` | no |
-| function\_ingress\_settings | String value that controls what traffic can reach the function. Allowed values are ALLOW\_ALL, ALLOW\_INTERNAL\_AND\_GCLB and ALLOW\_INTERNAL\_ONLY. Changes to this field will recreate the cloud function. | `string` | `ALLOW\_INTERNAL` | no |
+| function\_ingress\_settings | String value that controls what traffic can reach the function. Allowed values are ALLOW\_ALL, ALLOW\_INTERNAL\_AND\_GCLB and ALLOW\_INTERNAL\_ONLY. Changes to this field will recreate the cloud function. | `string` | `ALLOW_INTERNAL` | no |
 
  
 ## Outputs
