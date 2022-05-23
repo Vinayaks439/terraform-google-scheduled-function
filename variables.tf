@@ -185,3 +185,9 @@ variable "grant_token_creator" {
   description = "Specify true if you want to add token creator role to the default Pub/Sub SA"
   default     = false
 }
+
+variable "function_ingress_settings" {
+  type        = string
+  description = "String value that controls what traffic can reach the function. Allowed values are ALLOW_ALL, ALLOW_INTERNAL_AND_GCLB and ALLOW_INTERNAL_ONLY"
+  default     = "ALLOW_INTERNAL_ONLY"
+}
